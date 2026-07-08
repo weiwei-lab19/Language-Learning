@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Language Learning — Vocabulary Index</title>
+  <title>Language Learning — Flash Cards</title>
   <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Simple static page for learning languages with a searchable index and alphabetical listing">
+  <meta name="description" content="A simple flash-card app for learning Korean, Chinese, and Japanese vocabulary">
 </head>
 <body>
   <header class="site-header">
     <h1>Language Learning</h1>
-    <p>Search, browse and add vocabulary. Perfect for GitHub Pages.</p>
+    <p>Study vocabulary with flash cards and pronunciation support.</p>
   </header>
 
   <main class="container">
@@ -18,25 +18,26 @@
       <label>
         Language
         <select id="languageSelect">
-          <option value="Spanish">Spanish</option>
-          <option value="French">French</option>
-          <option value="German">German</option>
+          <option value="Korean">Korean</option>
+          <option value="Chinese">Chinese</option>
+          <option value="Japanese">Japanese</option>
         </select>
       </label>
 
       <input id="searchInput" type="search" placeholder="Search words or translations" />
-      <button id="showAdd">Add word</button>
+      <button id="showAdd">Add card</button>
     </section>
 
     <section id="addPanel" class="panel" hidden>
-      <h2>Add a new word</h2>
+      <h2>Add a new flash card</h2>
       <form id="addForm">
         <input id="wordInput" placeholder="Word" required />
+        <input id="pronunciationInput" placeholder="Pronunciation (optional)" />
         <input id="translationInput" placeholder="Translation" required />
         <select id="addLang">
-          <option>Spanish</option>
-          <option>French</option>
-          <option>German</option>
+          <option>Korean</option>
+          <option>Chinese</option>
+          <option>Japanese</option>
         </select>
         <div class="form-actions">
           <button type="submit">Save</button>
@@ -46,7 +47,24 @@
     </section>
 
     <section class="panel">
-      <h2>Search Results</h2>
+      <h2>Flash Cards</h2>
+      <div class="flash-controls">
+        <button type="button" id="prevCard">← Previous</button>
+        <button type="button" id="flipCard">Show answer</button>
+        <button type="button" id="nextCard">Next →</button>
+      </div>
+      <div id="flashCard" class="flash-card" tabindex="0">
+        <div class="flash-face">
+          <p class="flash-label">Word</p>
+          <h3 id="flashWord">Select a card</h3>
+          <p id="flashPronunciation" class="flash-pronunciation"></p>
+        </div>
+      </div>
+      <p id="flashHint" class="flash-hint">Use the buttons to study the current card.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Study List</h2>
       <ul id="resultsList" class="results"></ul>
     </section>
 
