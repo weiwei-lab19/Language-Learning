@@ -24,34 +24,14 @@
         </select>
       </label>
 
-      <input id="searchInput" type="search" placeholder="Search words or translations" />
-      <button id="showAdd">Add card</button>
-    </section>
-
-    <section id="addPanel" class="panel" hidden>
-      <h2>Add a new flash card</h2>
-      <form id="addForm">
-        <input id="wordInput" placeholder="Word" required />
-        <input id="pronunciationInput" placeholder="Pronunciation (optional)" />
-        <input id="translationInput" placeholder="Translation" required />
-        <select id="addLang">
-          <option>Korean</option>
-          <option>Chinese</option>
-          <option>Japanese</option>
-        </select>
-        <div class="form-actions">
-          <button type="submit">Save</button>
-          <button type="button" id="cancelAdd">Cancel</button>
-        </div>
-      </form>
     </section>
 
     <section class="panel">
       <h2>Flash Cards</h2>
       <div class="flash-controls">
-        <button type="button" id="prevCard">← Previous</button>
-        <button type="button" id="flipCard">Show answer</button>
-        <button type="button" id="nextCard">Next →</button>
+        <button type="button" id="randomCard">🎲 Random card</button>
+        <button type="button" id="showPronunciation">Pronunciation</button>
+        <button type="button" id="showTranslation">Translation</button>
       </div>
       <div id="flashCard" class="flash-card" tabindex="0">
         <div class="flash-face">
@@ -63,21 +43,13 @@
       <p id="flashHint" class="flash-hint">Use the buttons to study the current card.</p>
     </section>
 
-    <section class="panel">
-      <h2>Study List</h2>
-      <ul id="resultsList" class="results"></ul>
-    </section>
-
-    <section class="panel">
-      <h2>Alphabetical Index</h2>
-      <div id="alphaIndex" class="alpha-index"></div>
-    </section>
   </main>
 
   <footer class="site-footer">
     <small>Hosted on GitHub Pages — static & privacy-friendly.</small>
   </footer>
 
+  <script src="vocabulary.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
