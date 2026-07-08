@@ -1,0 +1,21 @@
+:root{
+  --bg:#f7f7fb; --card:#ffffff; --accent:#2b6df6; --muted:#6b7280; --pad:16px;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; margin:0;background:var(--bg);color:#111}
+.site-header{background:linear-gradient(90deg,#fff,#f1f5ff);padding:24px 16px;border-bottom:1px solid #e6e9ef}
+.site-header h1{margin:0;font-size:1.4rem}
+.container{max-width:900px;margin:24px auto;padding:0 16px}
+.toolbar{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+input[type=search]{flex:1;padding:10px;border:1px solid #ddd;border-radius:6px}
+select{padding:8px;border-radius:6px;border:1px solid #ddd}
+button{background:var(--accent);color:#fff;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
+.panel{background:var(--card);padding:var(--pad);border-radius:10px;box-shadow:0 1px 2px rgba(16,24,40,0.04);margin-bottom:12px}
+.results{list-style:none;padding:0;margin:0}
+.results li{padding:10px;border-bottom:1px solid #f0f2f7;display:flex;justify-content:space-between}
+.alpha-index{display:flex;flex-wrap:wrap;gap:8px}
+.alpha-index .bucket{min-width:120px;background:#f9fafb;padding:8px;border-radius:6px}
+.form-actions{margin-top:8px;display:flex;gap:8px}
+.site-footer{padding:16px;text-align:center;color:var(--muted)}
+
+@media (max-width:600px){.toolbar{flex-direction:column;align-items:stretch} .alpha-index .bucket{min-width:100%}}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Language Learning — Vocabulary Index</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Simple static page for learning languages with a searchable index and alphabetical listing">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Language Learning</h1>
+    <p>Search, browse and add vocabulary. Perfect for GitHub Pages.</p>
+  </header>
+
+  <main class="container">
+    <section class="toolbar">
+      <label>
+        Language
+        <select id="languageSelect">
+          <option value="Spanish">Spanish</option>
+          <option value="French">French</option>
+          <option value="German">German</option>
+        </select>
+      </label>
+
+      <input id="searchInput" type="search" placeholder="Search words or translations" />
+      <button id="showAdd">Add word</button>
+    </section>
+
+    <section id="addPanel" class="panel" hidden>
+      <h2>Add a new word</h2>
+      <form id="addForm">
+        <input id="wordInput" placeholder="Word" required />
+        <input id="translationInput" placeholder="Translation" required />
+        <select id="addLang">
+          <option>Spanish</option>
+          <option>French</option>
+          <option>German</option>
+        </select>
+        <div class="form-actions">
+          <button type="submit">Save</button>
+          <button type="button" id="cancelAdd">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Search Results</h2>
+      <ul id="resultsList" class="results"></ul>
+    </section>
+
+    <section class="panel">
+      <h2>Alphabetical Index</h2>
+      <div id="alphaIndex" class="alpha-index"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Hosted on GitHub Pages — static & privacy-friendly.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
