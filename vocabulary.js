@@ -1,6 +1,6 @@
 window.VOCABULARY = {
   Korean: [
-    { word: '안녕하세요', translation: 'hello', pronunciation: 'an-nyeong-ha-se-yo'},
+    { word: '안녕하세요', translation: 'hello', pronunciation: 'an-nyeong-ha-se-yo' },
     { word: '감사합니다', translation: 'thank you', pronunciation: 'gam-sa-hab-ni-da' }
   ],
   Chinese: [
@@ -9,7 +9,7 @@ window.VOCABULARY = {
   ],
   Japanese: [
     { word: 'こんにちは', translation: 'hello', pronunciation: 'ko-n\'-ni-chi-wa' },
-    { word: 'ありがとう', translation: 'thank you', pronunciation: 'a-ri-ga-to-u (arigatō)'  }
+    { word: 'ありがとう', translation: 'thank you', pronunciation: 'a-ri-ga-to-u (arigatō)' }
   ],
   Nepali: [
     { word: 'नमस्ते', translation: 'hello', pronunciation: 'namaste' },
