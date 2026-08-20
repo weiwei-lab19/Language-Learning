@@ -4,7 +4,7 @@ window.VOCABULARY = {
     { word: '감사합니다', translation: 'thank you', pronunciation: 'gam-sa-hab-ni-da' }
   ],
   Chinese: [
-    { word: '你好', translation: 'hell', pronunciation: 'nǐ hǎo' },
+    { word: '你好', translation: 'hello', pronunciation: 'nǐ hǎo' },
     { word: '谢谢', translation: 'thank you', pronunciation: 'xiè xiè' },
     { word: '今天是星期一', translation: 'today is Monday', pronunciation: 'jīn tiān shì xīng qí yī' }
   ],
